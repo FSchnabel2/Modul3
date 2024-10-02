@@ -1,15 +1,15 @@
 import java.util.Scanner;
 
-public class Kommandozeilenmenü {
+public class Kommandozeilenmenue {
 
 	Scanner scan;
 
-	public Kommandozeilenmenü() {
+	public Kommandozeilenmenue() {
 		this.scan = new Scanner(System.in);
 	}
 
-	public void MenüAnzeigen() {
-		System.out.println("MENÜ");
+	public void MenueAnzeigen() {
+		System.out.println("MENï¿½");
 		System.out.println("1) AUSGABE");
 		System.out.println("2) RECHNEN");
 		System.out.println("3) exit");
@@ -18,7 +18,7 @@ public class Kommandozeilenmenü {
 	public void start() {
 		String s = "-";
 		while (!s.equals("3")) {
-			MenüAnzeigen();
+			MenueAnzeigen();
 			s = scan.nextLine();
 			switch(s)
 			{
@@ -50,7 +50,7 @@ public class Kommandozeilenmenü {
 	
 	public void fehler()
 	{
-		System.out.println("Sie können nur 1,2 oder 3 eingeben!");
+		System.out.println("Sie kï¿½nnen nur 1,2 oder 3 eingeben!");
 	}
 
 
