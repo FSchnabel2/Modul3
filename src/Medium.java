@@ -13,8 +13,8 @@ public class Medium {
         this.genre = genre;
     }
 
-    protected void anzeigen() {
-        System.out.println(this.toString());
+    protected String anzeigen() {
+        return this.toString();
     }
 
     @Override
@@ -22,7 +22,7 @@ public class Medium {
         return "Medium{" +
                 "titel='" + titel + '\'' +
                 ", kommentar='" + kommentar + '\'' +
-                ", erscheinungsdatm=" + erscheinungsdatum +
+                ", erscheinungsdatum=" + erscheinungsdatum +
                 ", genre=" + genre +
                 '}';
     }

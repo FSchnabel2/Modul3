@@ -14,5 +14,18 @@ public class eBook extends Medium{
         this.auflage = auflage;
     }
 
+    protected String ausgeben() {
+        return super.anzeigen() + " " + this.toString();
+    }
 
+    @Override
+    public String toString() {
+        return "eBook{" +
+                super.toString() +
+                ", autor='" + autor + '\'' +
+                ", ISBN='" + ISBN + '\'' +
+                ", seitenanzahl=" + seitenanzahl +
+                ", auflage='" + auflage + '\'' +
+                '}';
+    }
 }

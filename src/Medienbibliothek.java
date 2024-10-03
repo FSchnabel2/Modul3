@@ -3,9 +3,14 @@ import java.util.Objects;
 
 public class Medienbibliothek {
     private ArrayList<Medium> medien;
+
+    public Medienbibliothek() {
+        this.medien = new ArrayList<Medium>();
+    }
+
     public void alleAnzeigen() {
         for(Medium m : medien) {
-            m.anzeigen();
+            System.out.println(m.anzeigen());
         }
     }
 
