@@ -3,15 +3,17 @@ import java.util.Scanner;
 public class Kommandozeilenmenue {
 
 	Scanner scan;
+	private Medienbibliothek medienbibliothek;
 
-	public Kommandozeilenmenue() {
+	public Kommandozeilenmenue(Medienbibliothek medienbibliothek) {
 		this.scan = new Scanner(System.in);
+		this.medienbibliothek = medienbibliothek;
 	}
 
 	public void MenueAnzeigen() {
 		System.out.println("MENÜ");
-		System.out.println("1) AUSGABE");
-		System.out.println("2) RECHNEN");
+		System.out.println("1) ALLE MEDIEN ANZEIGEN");
+		System.out.println("2) MEDIUM SUCHEN");
 		System.out.println("3) exit");
 	}
 
@@ -26,13 +28,16 @@ public class Kommandozeilenmenue {
 				this.ausgabe();
 				break;
 			case "2":
-				this.rechnen();
+				this.suchen();
 				break;
 			case "3":
+				this.add();
 				break;
-			default:
-				this.fehler();
-				break;
+				case "4":
+					break;
+				default:
+					this.fehler();
+					break;
 			}
 		}
 		scan.close();
@@ -40,15 +45,15 @@ public class Kommandozeilenmenue {
 	
 	public void ausgabe()
 	{
-
+		this.medienbibliothek.alleAnzeigen();
 	}
 	
-	public void rechnen()
+	public void suchen()
 	{
 		System.out.println("RECHNEN 1+1 = 2");
 	}
 	
-	public void fehler()
+	public void add()
 	{
 		System.out.println("Sie k�nnen nur 1,2 oder 3 eingeben!");
 	}
