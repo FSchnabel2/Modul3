@@ -21,19 +21,16 @@ public class Kommandozeilenmenue {
 
     public void start() {
         String s = "-";
-        while (!s.equals("3")) {
+        while (!s.equals("4")) {
             MenueAnzeigen();
             s = scan.nextLine();
             switch (s) {
                 case "1":
                     this.ausgabe();
-                    break;
                 case "2":
                     this.suchen();
-                    break;
                 case "3":
                     this.add();
-                    break;
                 case "4":
                     break;
                 default:
