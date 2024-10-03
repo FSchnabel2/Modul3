@@ -15,6 +15,8 @@ public class Main {
 
         medienbibliothek.searchMedium("Buch1");
 
+        Kommandozeilenmenue kommandozeilenmenue = new Kommandozeilenmenue(new Medienbibliothek());
+        kommandozeilenmenue.start();
 
     }
 }

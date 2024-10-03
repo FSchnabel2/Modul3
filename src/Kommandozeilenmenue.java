@@ -15,7 +15,8 @@ public class Kommandozeilenmenue {
         System.out.println("MENÜ");
         System.out.println("1) ALLE MEDIEN ANZEIGEN");
         System.out.println("2) MEDIUM SUCHEN");
-        System.out.println("3) exit");
+        System.out.println("3) MEDIUM HINZUFÜGEN");
+        System.out.println("4) exit");
     }
 
     public void start() {
