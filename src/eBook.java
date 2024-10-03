@@ -15,16 +15,17 @@ public class eBook extends Medium{
     }
 
     protected String anzeigen() {
-        return super.anzeigen() + " " + this.toString();
-    }
-
-    @Override
-    public String toString() {
         return "eBook{" +
+                super.getMediumInfo() +
                 ", autor='" + autor + '\'' +
                 ", ISBN='" + ISBN + '\'' +
                 ", seitenanzahl=" + seitenanzahl +
                 ", auflage='" + auflage + '\'' +
                 '}';
+    }
+
+    @Override
+    public String toString() {
+        return anzeigen();
     }
 }

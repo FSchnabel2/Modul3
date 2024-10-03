@@ -14,7 +14,14 @@ public class Medium {
     }
 
     protected String anzeigen() {
-        return this.toString();
+        return getMediumInfo();
+    }
+
+    protected String getMediumInfo() {
+        return "titel='" + titel + '\'' +
+                ", kommentar='" + kommentar + '\'' +
+                ", erscheinungsdatum=" + erscheinungsdatum +
+                ", genre=" + genre;
     }
 
     public String getTitel() {
@@ -23,11 +30,6 @@ public class Medium {
 
     @Override
     public String toString() {
-        return "Medium{" +
-                "titel='" + titel + '\'' +
-                ", kommentar='" + kommentar + '\'' +
-                ", erscheinungsdatum=" + erscheinungsdatum +
-                ", genre=" + genre +
-                '}';
+        return "Medium{" + getMediumInfo() + '}';
     }
 }
