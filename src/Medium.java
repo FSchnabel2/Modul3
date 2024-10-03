@@ -17,6 +17,10 @@ public class Medium {
         return this.toString();
     }
 
+    public String getTitel() {
+        return titel;
+    }
+
     @Override
     public String toString() {
         return "Medium{" +

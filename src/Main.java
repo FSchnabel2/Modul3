@@ -12,6 +12,9 @@ public class Main {
         medienbibliothek.add(film);
         medienbibliothek.alleAnzeigen();
         System.out.println();
+
+        medienbibliothek.searchMedium("Buch1");
+
         Kommandozeilenmenue kommandozeilenmenue = new Kommandozeilenmenue();
         kommandozeilenmenue.start();
     }
