@@ -54,7 +54,6 @@ public class Kommandozeilenmenue {
     }
 
     public void add() {
-        System.out.println("Geben Sie die Daten ein ");
         System.out.println("Wählen Sie den Medientyp:");
         System.out.println("1) eBook");
         System.out.println("2) Film");
