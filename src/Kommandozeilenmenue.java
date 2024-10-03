@@ -9,7 +9,7 @@ public class Kommandozeilenmenue {
 	}
 
 	public void MenueAnzeigen() {
-		System.out.println("MEN�");
+		System.out.println("MENÜ");
 		System.out.println("1) AUSGABE");
 		System.out.println("2) RECHNEN");
 		System.out.println("3) exit");

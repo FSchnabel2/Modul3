@@ -10,18 +10,17 @@ public class eBook extends Medium{
         super(titel, kommentar, erscheinungsdatum, genre);
         this.autor = autor;
         this.ISBN = ISBN;
-        seitenanzahl = seitenanzahl;
+        this.seitenanzahl = seitenanzahl;
         this.auflage = auflage;
     }
 
-    protected String ausgeben() {
+    protected String anzeigen() {
         return super.anzeigen() + " " + this.toString();
     }
 
     @Override
     public String toString() {
         return "eBook{" +
-                super.toString() +
                 ", autor='" + autor + '\'' +
                 ", ISBN='" + ISBN + '\'' +
                 ", seitenanzahl=" + seitenanzahl +
