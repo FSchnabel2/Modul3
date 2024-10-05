@@ -27,10 +27,13 @@ public class Kommandozeilenmenue {
             switch (s) {
                 case "1":
                     this.ausgabe();
+                    break;
                 case "2":
                     this.suchen();
+                    break;
                 case "3":
                     this.add();
+                    break;
                 case "4":
                     break;
                 default:
