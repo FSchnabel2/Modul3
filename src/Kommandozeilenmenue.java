@@ -104,7 +104,7 @@ public class Kommandozeilenmenue {
     }
 
     public void fehler() {
-
+        throw new RuntimeException("Ungültige Eingabe. Bitte wählen Sie eine gültige Option aus:");
     }
 
 
