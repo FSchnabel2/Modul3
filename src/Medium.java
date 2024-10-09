@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class Medium {
     private String titel;
@@ -7,6 +8,10 @@ public class Medium {
     private Genre genre;
 
     public Medium(String titel, String kommentar, LocalDate erscheinungsdatum, Genre genre) {
+        Objects.requireNonNull(titel);
+        Objects.requireNonNull(kommentar);
+        Objects.requireNonNull(erscheinungsdatum);
+        Objects.requireNonNull(genre);
         this.titel = titel;
         this.kommentar = kommentar;
         this.erscheinungsdatum = erscheinungsdatum;
